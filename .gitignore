@@ -1,0 +1,83 @@
+# Local environments and IDE files
+.venv/
+__pycache__/
+*.py[cod]
+.idea/
+.vscode/
+.DS_Store
+
+# Local datasets and image/mask collections
+data/
+data_labeled_from_coco/
+data_labeled_cls_from_coco/
+class_tiles/
+patches/
+July.v4i.coco/
+*.jpg
+*.jpeg
+*.png
+*.bmp
+*.tif
+*.tiff
+*.webp
+
+# Private annotations, GPS data, and tabular exports
+*.csv
+*.xlsx
+*.xls
+*groundtruth*
+*mapping*
+*georef*
+*gps*
+predictions/
+
+# Model checkpoints and training outputs
+*.pt
+*.pth
+*.onnx
+training_runs/
+runs_*/
+blob_model_original_tabular_verification/
+model_verification_results/
+latlon_comparison_results/
+results_*/
+video_verification_results*/
+plots/
+*_cache/
+
+# Videos and generated media
+*.mp4
+*.avi
+*.mov
+*.mkv
+
+# Generated backups and logs
+*.bak
+*.log
+run_log.txt
+
+# Object-detection/segmentation-only scripts
+1_tiling.py
+3.build_multiclass_masks_from_coco.py
+6.build_box_patches.py
+7.plant_contrastive_seg_multiclass.py
+8.plant_contrastive_seg_without background and weights.py
+12.datatest.py
+13_rebalance_splits.py
+15_NEW_APROACH.PY
+16_Ground_truth.ipynb
+11_groundtruth_vs_rgb.py
+14_raw_image_&_masked_images.py
+16_filter_images_by_coords.py
+18_python verify_tiles.py
+19_blob_level_prediction_on_image and_table.py
+19_verification_of_model.py
+20_imgvstab_gps.py
+23_video_verification_10m_full_frame.py
+23_video_verification_fullframe.py
+24_blob_pixel_level_model_verification_on_video.py
+24_without_aug_inference.py
+25_without_background_pixel_level_model_verification_on_video.py
+26_with_background_pixel_level_model_verification_on_video.py
+27_real_time_blob_model_deployment.py
+mask_stats.py
